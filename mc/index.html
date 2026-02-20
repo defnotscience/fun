@@ -4,20 +4,34 @@
 <head>
   <title>Minecraft - Cool Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 
 <body>
-  <a href="ULTIMATE 1.8 zj71 eagler craft.html">
-    <button>
-      1.8 Minecraft
+  <div class="button-container">
+    <button class="card-button" data-url="ULTIMATE 1.8 zj71 eagler craft.html"
+      data-image="https://upload.wikimedia.org/wikipedia/en/thumb/b/b6/Minecraft_2024_cover_art.png/250px-Minecraft_2024_cover_art.png">
+      <div class="card-image"></div>
+      <div class="card-content">
+        <div class="card-title">1.8 (eagler craft)</div>
+        <div class="card-description">Click to navigate</div>
+      </div>
     </button>
-  </a>
-  <a href="Eaglercraft_1.12_Offline_en_US.html">
-    <button>
-      1.12 Minecraft
+    
+    <button class="card-button" data-url="Eaglercraft_1.12_Offline_en_US.html"
+      data-image="https://upload.wikimedia.org/wikipedia/en/thumb/b/b6/Minecraft_2024_cover_art.png/250px-Minecraft_2024_cover_art.png">
+      <div class="card-image"></div>
+      <div class="card-content">
+        <div class="card-title">1.12 (eagler craft)</div>
+        <div class="card-description">Click to navigate</div>
+      </div>
     </button>
-  </a>
+  </div>
+
+  <div class="back-button-container">
+    <button class="back-button" onclick="goBack()">Home</button>
+  </div>
+  <script src="/script.js"></script>
 </body>
 
 </html>

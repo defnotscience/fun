@@ -1,3 +1,25 @@
+document.querySelectorAll('.card-button').forEach(button => {
+    // Set background image from data attribute
+    const imageUrl = button.getAttribute('data-image');
+    const cardImage = button.querySelector('.card-image');
+    
+    if (imageUrl) {
+        cardImage.style.backgroundImage = `url('${imageUrl}')`;
+    }
+    
+    // Handle click navigation
+    button.addEventListener('click', function() {
+        const url = this.getAttribute('data-url');
+        
+        if (url) {
+            console.log('Navigating to:', url);
+            window.location.href = url;
+        } else {
+            console.warn('No URL specified for this button');
+        }
+    });
+});
+
 function updateDeviceInfo() {
     const watermark = document.getElementById('deviceWatermark');
     const userAgent = navigator.userAgent;
