@@ -1,41 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>lolYLOLOLOLOL</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-        }
 
-        iframe {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1;
-            height: 100%;
-            border: none;
-            display: block;
-        }
-    </style>
+<head>
+    <title>Overtide - Cool Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
 </head>
+
 <body>
-    <!--<iframe id="gameFrame" src="https://veck.io/"></iframe>-->
-    
     <div class="container">
         <iframe class="responsive-iframe" src="https://overtide.io"></iframe>
     </div>
-    
-    <script>
-        const iframe = document.getElementById('iframe');
-        window.addEventListener('message', (event) => {
-            if (event.origin !== 'https://overtide.io') return;
-            console.log('Message from game:', event.data);
-        });
-    </script>
+
+    <div class="back-button-container">
+        <button class="back-button" onclick="goBack()">Home</button>
+    </div>
+    <div class="device-watermark matrix" id="deviceWatermark"></div>
+    <script src="/script.js"></script>
 </body>
+
 </html>
